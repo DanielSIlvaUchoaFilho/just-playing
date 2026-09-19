@@ -121,25 +121,43 @@ nht-of-type seleciona a segunda img se tiver né */
     margin-top: 90px;
 }
 
-.a {
+.rating {
     height: 300px;
     width: 100%;
 }
 
-.a h2 {
+.rating h2 {
     text-align: center;
     padding-top: 1rem;
 }
 
-.a .stars {
-    color: gray;
-    font-size: 3rem;
+.rating .stars {
     text-align: center;
     margin-top: 50px;
-    cursor: pointer;
 }
 
-.a h3 {
+.rating .star {
+    font-size: 35px;
+    color: gray;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.rating .star:hover {
+    transform: scale(1.15);
+}
+
+.rating .star.active {
+    color: gold;
+}
+
+.rating h3 {
     text-align: center;
     margin-top: 20px;
 }

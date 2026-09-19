@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    width: 100vw;
+    background: blue;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a {
+    font-size: 20px;
+}
+
+.hero-message {
+    max-width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.portfolio img {
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+}
+/* object-fit
+cover
+contain
+fill
+none
+scale-down */
+
+.portfolio img:nth-child(2) {
+    object-position: top right;
+}
+/* object-position
+top
+center
+right
+left
+bottom 
+30%
+*/
+
+/* tem first last child ou of type
+e tem tb eles com () aí bota numero ou odd even
+ou 3n ou 3n + 2 */
+
+/* N T H please */
+
+/* nth-child seleciona só se a img for o segundo child
+nht-of-type seleciona a segunda img se tiver né */
+
+.contact-us {
+    height: 300px;
+    width: 100%;
+    background: #08344d;
+    background: radial-gradient(
+        circle,
+        rgba(8, 52, 77, 1) 50%,
+        rgba(59, 130, 237, 1) 100%
+    );
+}
+
+.contact-us .message h2 {
+    text-align: center;
+    padding-top: 20px;
+    /* margin colapse pesquisar sobre isso */
+    color: white;
+}
+
+.contact-us .message p {
+    text-align: center;
+    color: white;
+    margin-top: 75px;
+}
+
+.contact-us .contact {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-top: 90px;
+}
+
+.a {
+    height: 300px;
+    width: 100%;
+}
+
+.a h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.a .stars {
+    color: gray;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.a h3 {
+    text-align: center;
+    margin-top: 20px;
+}

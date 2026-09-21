@@ -117,6 +117,71 @@
             <h3 class="message">lets go</h3>
         </div>
 
+        <!-- <div class="pseudo-before-after">
+            <h3>pseudo after and before</h3>
+        </div> -->
+
+        <form class="form">
+            <div>
+                <label for="name">Nome:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="digite seu nome"
+                    required
+                />
+            </div>
+            <!-- email -->
+            <div>
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="digite seu email"
+                    required
+                />
+            </div>
+            <!-- data -->
+            <div>
+                <label for="name">Data:</label>
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    placeholder="digite seu nome"
+                    required
+                />
+            </div>
+            <!-- corte -->
+            <div>
+                <input
+                    type="text"
+                    id="haircut"
+                    name="haircut"
+                    list="haircuts"
+                    placeholder="escolha seu corte ou digite um"
+                    required
+                />
+
+                <datalist id="haircuts">
+                    <option value="low fade"></option>
+                    <option value="degradê"></option>
+                    <option value="mod cut"></option>
+                    <option value="low taper"></option>
+                    <option value="jit fade"></option>
+                    <option value="social"></option>
+                </datalist>
+            </div>
+
+            <div>
+                <label for="message">Mensagem:</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
         <script src="script.js"></script>
     </body>
 </html>

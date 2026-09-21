@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // rating
+
     const stars = document.querySelectorAll(".star");
     const message = document.querySelector(".rating .message");
     const ratingContainer = document.querySelector(".stars");
@@ -49,4 +51,20 @@ document.addEventListener("DOMContentLoaded", () => {
         updateRating(selectedRating);
         updateMessage(selectedRating);
     });
+
+    // form
+
+    const setMinimumDate = () => {
+        const date = document.querySelector("#date");
+
+        const today = new Date();
+
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, "0");
+        const day = String(today.getDate()).padStart(2, "0");
+
+        date.min = `${year}-${month}-${day}`;
+    };
+
+    document.addEventListener("click", setMinimumDate);
 });

@@ -55,6 +55,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    /* margin: 0 15px;
+    padding: 0 16px; */
+    /* take a look here */
 }
 
 .portfolio img {
@@ -160,4 +163,79 @@ nht-of-type seleciona a segunda img se tiver né */
 .rating h3 {
     text-align: center;
     margin-top: 20px;
+}
+
+/* form */
+
+/* .pseudo-before-after h3 {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.pseudo-before-after h3::after {
+    content: "";
+    height: 0.2em;
+    width: 100%;
+    background-image: linear-gradient(to right, blue, red);
+    border-radius: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form > div:has(input[type="text"]) input {
+    padding: 15px;
+    border-color: blue;
+    border-radius: 1000px;
+}
+
+.form .btn {
+    padding: 1rem 2rem;
+    background: #161a20;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    position: relative;
+    margin: 15px;
+    cursor: pointer;
+
+    align-self: center;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.form .btn::after {
+    content: "";
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background: #0e36c7;
+    background: linear-gradient(
+        90deg,
+        rgba(14, 54, 199, 1) 0%,
+        rgba(253, 137, 29, 1) 50%,
+        rgba(227, 227, 16, 1) 100%
+    );
+    z-index: -1;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form .btn:hover {
+    z-index: 0;
+    box-shadow:
+        40px 0 100px rgba(227, 227, 16, 1),
+        -40px 0 100px rgba(14, 54, 199, 1);
 }
